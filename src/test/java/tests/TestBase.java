@@ -19,7 +19,7 @@ public class TestBase {
         capabilities.setCapability("enableVNC", true);
         capabilities.setCapability("enableVideo", true);
         Configuration.browserCapabilities = capabilities;
-        String selenoidUrl = System.getProperty("selenoid_url");
+        String selenoidUrl = System.getProperty("selenoid.url");
         Configuration.remote = "https://user1:1234@" + selenoidUrl + "/wd/hub/";
     }
 
